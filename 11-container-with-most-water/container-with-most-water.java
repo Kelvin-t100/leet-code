@@ -5,7 +5,7 @@ class Solution {
         while(l<r){
             int h=height[l]>height[r]?height[r]:height[l];
             tem=h*(r-l);
-            ans=Math.max(tem,ans);
+            ans=ans>tem?ans:tem;
             if(height[l]>height[r]){
                 r--;
             }else
